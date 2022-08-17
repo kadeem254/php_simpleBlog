@@ -1,0 +1,43 @@
+@use "./variable";
+
+.header{
+  padding: 1rem 0;
+
+  background-color: variable.$eggplant;
+  color: variable.$pale-spring-bud-2;
+
+  .inner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo-container{
+      .logo{
+        font-family: variable.$dancing-script;
+        font-size: 1.5em;
+      }
+    }    
+
+    nav.nav{
+      .links-list{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+        .navlink{
+          $_trs: all .3s linear;
+          @include variable.transition( $_trs );
+          a{
+            font-size: 1.2em;
+            padding: .25rem .5rem;
+          }
+        }
+
+        .navlink:hover{
+          color: variable.$fawn;
+        }
+      }
+    }
+  }
+}

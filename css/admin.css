@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,100;0,400;0,600;0,800;1,100;1,400;1,600;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, a:visited, a:active, a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+.header {
+  padding: 1rem 0;
+  background-color: #60495a;
+  color: #e9edc9;
+}
+.header .inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .inner .logo-container .logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5em;
+}
+.header .inner nav.nav .links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.header .inner nav.nav .links-list .navlink {
+  transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+.header .inner nav.nav .links-list .navlink a {
+  font-size: 1.2em;
+  padding: 0.25rem 0.5rem;
+}
+.header .inner nav.nav .links-list .navlink:hover {
+  color: #d4a373;
+}
+
+body {
+  background-color: #fefae0;
+  color: #231f20;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+.inner {
+  padding: 0 2rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.main {
+  margin-top: 5rem;
+}
+
+#landing-section div.inner .sub-heading {
+  margin: 0 0 1rem;
+  font-size: 2em;
+  font-weight: 400;
+  color: #60495a;
+}
+
+#post-section div.inner .posts-list {
+  padding: 0.5rem;
+  background-color: #d4a373;
+  color: #fefae0;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+#post-section div.inner .posts-list .no-posts {
+  padding: 0.5rem 0;
+  font-size: 1.5em;
+  text-align: center;
+  color: #e9edc9;
+}/*# sourceMappingURL=admin.css.map */

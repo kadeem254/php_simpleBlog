@@ -1,0 +1,23 @@
+@use "./components/variable";
+@use "./components/clearfix";
+@use "./components/navigation";
+@use "./components/base";
+
+#landing-section{
+  div.inner{
+
+    .main-heading{
+      font-family: variable.$dancing-script;
+      font-size: 5em;
+      font-weight: 400;
+    }
+
+    .sub-heading{
+      max-width: 678px;
+
+      font-size: 1.5em;
+      font-weight: 400;
+      color: variable.$eggplant;
+    }
+  }
+}

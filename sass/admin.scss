@@ -1,0 +1,39 @@
+@use "./components/variable";
+@use "./components/clearfix";
+@use "./components/navigation";
+@use "./components/base";
+
+#landing-section{
+  div.inner{
+
+    .sub-heading{
+      margin: 0 0 1rem;
+      
+      font-size: 2em;
+      font-weight: 400;
+      color: variable.$eggplant;
+    }
+
+  }
+}
+
+#post-section{
+  div.inner{
+
+    .posts-list{
+      padding: .5rem;
+      background-color: variable.$fawn;
+      color: variable.$cornsilk;
+      border-radius: .5rem;
+      font-weight: 600;
+
+      .no-posts{
+        padding: .5rem 0;
+
+        font-size: 1.5em;
+        text-align: center;
+        color: variable.$pale-spring-bud-2;
+      }
+    }
+  }
+}

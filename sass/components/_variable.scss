@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,100;0,400;0,600;0,800;1,100;1,400;1,600;1,800&display=swap');
+
+$eerie-black: #272727ff;
+$pale-spring-bud: #ccd5aeff;
+$pale-spring-bud-2: #e9edc9ff;
+$cornsilk: #fefae0ff;
+$papaya-whip: #faedcdff;
+$fawn: #d4a373ff;
+$eggplant: #60495aff;
+$raisin-black: #231f20ff;
+
+$dancing-script: 'Dancing Script', cursive;
+$montserrat: 'Montserrat', sans-serif;
+
+@mixin transform( $value ){
+  transform: $value;
+  -o-transform: $value;
+  -ms-transform: $value;
+  -moz-transform: $value;
+  -webkit-transform: $value;
+}
+
+@mixin transition( $value ){
+  transition: $value;
+  -o-transition: $value;
+  -moz-transition: $value;
+  -webkit-transition: $value;
+}
+
+@mixin animation( $value ) {
+  animation: $value;
+  -o-animation: $value;
+  -moz-animation: $value;
+  -webkit-animation: $value;
+}

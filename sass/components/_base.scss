@@ -1,0 +1,23 @@
+@use "./variable";
+body{
+  background-color: variable.$cornsilk;
+  color: variable.$raisin-black;
+
+  font-family: variable.$montserrat;
+  font-size: 18px;
+}
+
+.inner{
+  padding: 0 2rem;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+}
+.main{
+  margin-top: 5rem;
+}
