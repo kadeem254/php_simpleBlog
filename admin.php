@@ -6,11 +6,6 @@
     <p class="text">No Entries Found <i class="fa-solid fa-file-circle-xmark"></i> </p>
   </div>
   NO_POSTS_HTML;
-
-  /** Returns an array containing existing posts,
-   * null if no posts exist and
-   * throws an error if issues are encountered.
-   */
   
 ?>
 
