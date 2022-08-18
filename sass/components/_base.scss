@@ -1,5 +1,5 @@
 @use "./variable";
-body{
+body {
   background-color: variable.$cornsilk;
   color: variable.$raisin-black;
 
@@ -7,32 +7,40 @@ body{
   font-size: 18px;
 }
 
-.inner{
+.main {
+  position: relative;
+  margin-top: 5rem;
+  & > section {
+    position: relative;
+    & > .inner {
+      position: relative;
+    }
+  }
+}
+
+.inner {
   padding: 0 2rem;
 }
 
-.header{
+.header {
   position: fixed;
   top: 0;
   left: 0;
 
   width: 100%;
 }
-.main{
-  margin-top: 5rem;
-}
 
-.btn{
+.btn {
   display: inline-block;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border: 2px solid variable.$raisin-black;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 
-  $_trs: all .3s ease-out;
-  @include variable.transition( $_trs );
+  $_trs: all 0.3s ease-out;
+  @include variable.transition($_trs);
 
-  &:hover{
-    $_trf: scale( 105% );
-    @include variable.transform( $_trf );
+  &:hover {
+    $_trf: scale(105%);
+    @include variable.transform($_trf);
   }
 }
