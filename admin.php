@@ -3,7 +3,7 @@
 
   $NO_POSTS_HTML = <<<NO_POSTS_HTML
   <div class="no-posts">
-    <p class="text">No Entries Found <i class="fa-solid fa-folder-closed"></i> </p>
+    <p class="text">No Entries Found <i class="fa-solid fa-file-circle-xmark"></i> </p>
   </div>
   NO_POSTS_HTML;
 
