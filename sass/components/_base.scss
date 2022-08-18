@@ -21,3 +21,18 @@ body{
 .main{
   margin-top: 5rem;
 }
+
+.btn{
+  display: inline-block;
+  padding: .5rem 1rem;
+  border: 2px solid variable.$raisin-black;
+  border-radius: .25rem;
+
+  $_trs: all .3s ease-out;
+  @include variable.transition( $_trs );
+
+  &:hover{
+    $_trf: scale( 105% );
+    @include variable.transform( $_trf );
+  }
+}
