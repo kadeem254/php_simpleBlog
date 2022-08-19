@@ -10,7 +10,7 @@
 ?>
 
 
-<!-- Can be accessed by both the admin and normal users -->
+<!-- Can be accessed by both the admin -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,9 +23,6 @@
   <link rel="stylesheet" href="./css/admin.css">
   <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
   <link rel="stylesheet" href="fontawesome/css/solid.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.23.3/css/medium-editor.min.css" integrity="sha512-zYqhQjtcNMt8/h4RJallhYRev/et7+k/HDyry20li5fWSJYSExP9O07Ung28MUuXDneIFg0f2/U3HJZWsTNAiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.23.3/js/medium-editor.min.js" integrity="sha512-5D/0tAVbq1D3ZAzbxOnvpLt7Jl/n8m/YGASscHTNYsBvTcJnrYNiDIJm6We0RPJCpFJWowOPNz9ZJx7Ei+yFiA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 <body>
@@ -67,6 +64,12 @@
 
     <section id="post-section">
       <div class="inner">
+        
+        <!-- Action bar: include add post feature -->
+        <div class="post-actions">
+          <!-- redirects to the post edit page to add a new post -->
+          <a href="./post_editor.php?" class="btn btn-add-post">Add Post</a>
+        </div>
 
         <!-- search bar for posts -->
 
@@ -83,9 +86,24 @@
               if( $posts === NULL ){
                 echo $NO_POSTS_HTML;
               }
+              // show results here
+              else{
+                echo "Results are present";
+              }
             }
+            
             catch (Exception $err) {
+              echo <<<POST_ERROR_P1
+              <div class="post-error">
+                <p class="text">Error Fetching Posts: 
+              POST_ERROR_P1;
+
               echo $err->getMessage();
+
+              echo <<<POST_ERROR_P2
+                </p>
+              </div>
+              POST_ERROR_P2;
             }
           ?>
         </div>
@@ -95,5 +113,6 @@
 
   </main>
 
+  <script defer src="./scripts/admin.js"></script>
 </body>
 </html>

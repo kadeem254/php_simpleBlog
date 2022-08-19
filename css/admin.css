@@ -56,6 +56,17 @@ body {
   font-size: 18px;
 }
 
+.main {
+  position: relative;
+  margin-top: 5rem;
+}
+.main > section {
+  position: relative;
+}
+.main > section > .inner {
+  position: relative;
+}
+
 .inner {
   padding: 0 2rem;
 }
@@ -67,8 +78,22 @@ body {
   width: 100%;
 }
 
-.main {
-  margin-top: 5rem;
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 2px solid #231f20;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+.btn:hover {
+  transform: scale(105%);
+  -o-transform: scale(105%);
+  -ms-transform: scale(105%);
+  -moz-transform: scale(105%);
+  -webkit-transform: scale(105%);
 }
 
 #landing-section div.inner .sub-heading {
@@ -78,16 +103,40 @@ body {
   color: #60495a;
 }
 
+#post-section {
+  margin-top: 2rem;
+}
+#post-section div.inner .post-actions {
+  padding: 1rem 0;
+}
+#post-section div.inner .post-actions .btn {
+  font-weight: 600;
+  background-color: #231f20;
+  color: #e9edc9;
+}
+#post-section div.inner .post-actions .btn:hover {
+  background-color: #60495a;
+}
 #post-section div.inner .posts-list {
-  padding: 0.5rem;
-  background-color: #d4a373;
-  color: #fefae0;
+  background-color: #e9edc9;
+  color: #d4a373;
   border-radius: 0.5rem;
   font-weight: 600;
+  border: 2px solid #d4a373;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 #post-section div.inner .posts-list .no-posts {
-  padding: 0.5rem 0;
+  padding: 0.5rem 2rem;
   font-size: 1.5em;
   text-align: center;
-  color: #e9edc9;
+  background-color: #ffe55e;
+  color: #231f20;
+}
+#post-section div.inner .posts-list .post-error {
+  padding: 0.5rem 2rem;
+  font-size: 1.2em;
+  text-align: justify;
+  background-color: #d7504d;
+  color: #fefae0;
 }/*# sourceMappingURL=admin.css.map */

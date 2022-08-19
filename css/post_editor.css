@@ -96,14 +96,64 @@ body {
   -webkit-transform: scale(105%);
 }
 
-#landing-section div.inner .main-heading {
-  font-family: "Dancing Script", cursive;
-  font-size: 5em;
-  font-weight: 400;
-}
 #landing-section div.inner .sub-heading {
-  max-width: 678px;
-  font-size: 1.5em;
+  margin: 0 0 1rem;
+  font-size: 2em;
   font-weight: 400;
   color: #60495a;
-}/*# sourceMappingURL=index.css.map */
+}
+#landing-section div.inner .post-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#landing-section div.inner .post-edit-form .form-field {
+  display: flex;
+  flex-direction: column;
+}
+#landing-section div.inner .post-edit-form .form-field.form-errors {
+  padding: 0.5rem;
+  background-color: #d7504d;
+  color: #fefae0;
+  list-style: disc inside;
+}
+#landing-section div.inner .post-edit-form .form-field.form-errors.--hidden {
+  display: none;
+}
+#landing-section div.inner .post-edit-form .contrasted-input {
+  padding: 0.5rem;
+  background-color: #60495a;
+  color: #ccd5ae;
+  border-radius: 0.25rem;
+}
+#landing-section div.inner .post-edit-form .label {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+#landing-section div.inner .post-edit-form .input {
+  font-size: 1em;
+}
+#landing-section div.inner .post-edit-form .input:focus {
+  background-color: #faedcd;
+  color: #231f20;
+  outline-color: #7f5539;
+  box-shadow: 0px 0px;
+}
+#landing-section div.inner .post-edit-form .form-field.post-title-field input.input {
+  background-color: #60495a;
+  color: #ccd5ae;
+}
+#landing-section div.inner .post-edit-form .form-field.post-content-field .post-content {
+  min-height: 5rem;
+}
+#landing-section div.inner .post-edit-form .form-field.form-submission-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+#landing-section div.inner .post-edit-form .form-field.form-submission-field .micro-field {
+  display: flex;
+  gap: 0.5rem;
+}/*# sourceMappingURL=post_editor.css.map */

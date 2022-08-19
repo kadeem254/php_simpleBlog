@@ -1,0 +1,86 @@
+@use "./components/variable";
+@use "./components/clearfix";
+@use "./components/navigation";
+@use "./components/base";
+
+#landing-section {
+  div.inner {
+    .sub-heading {
+      margin: 0 0 1rem;
+
+      font-size: 2em;
+      font-weight: 400;
+      color: variable.$eggplant;
+    }
+
+    .post-edit-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .form-field {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-field.form-errors {
+        padding: 0.5rem;
+        background-color: variable.$indian-red;
+        color: variable.$cornsilk;
+
+        list-style: disc inside;
+
+        &.--hidden {
+          display: none;
+        }
+      }
+
+      .contrasted-input {
+        padding: 0.5rem;
+        background-color: variable.$eggplant;
+        color: variable.$pale-spring-bud;
+        border-radius: 0.25rem;
+      }
+
+      .label {
+        font-size: 1.2em;
+        font-weight: 600;
+      }
+      .input {
+        font-size: 1em;
+        &:focus {
+          background-color: variable.$papaya-whip;
+          color: variable.$raisin-black;
+          outline-color: variable.$coffee;
+          box-shadow: 0px 0px;
+        }
+      }
+
+      .form-field.post-title-field {
+        input.input {
+          background-color: variable.$eggplant;
+          color: variable.$pale-spring-bud;
+        }
+      }
+
+      .form-field.post-content-field {
+        .post-content {
+          min-height: 5rem;
+        }
+      }
+
+      .form-field.form-submission-field {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+
+        .micro-field {
+          display: flex;
+          gap: 0.5rem;
+        }
+      }
+    }
+  }
+}

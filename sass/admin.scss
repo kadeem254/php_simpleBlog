@@ -18,21 +18,47 @@
 }
 
 #post-section{
+  margin-top: 2rem;
   div.inner{
 
+    .post-actions{
+      padding: 1rem 0;
+
+      .btn{
+        font-weight: 600;
+        background-color: variable.$raisin-black;
+        color: variable.$pale-spring-bud-2;
+        &:hover{
+          background-color: variable.$eggplant;
+        }
+      }
+    }
+
     .posts-list{
-      padding: .5rem;
-      background-color: variable.$fawn;
-      color: variable.$cornsilk;
+      background-color: variable.$pale-spring-bud-2;
+      color: variable.$fawn;
       border-radius: .5rem;
       font-weight: 600;
 
+      border: 2px solid variable.$fawn;
+      border-radius: .5rem;
+      overflow: hidden;
+
       .no-posts{
-        padding: .5rem 0;
+        padding: .5rem 2rem;
 
         font-size: 1.5em;
         text-align: center;
-        color: variable.$pale-spring-bud-2;
+        background-color: variable.$minion-yellow;
+        color: variable.$raisin-black;
+      }
+      .post-error{
+        padding: .5rem 2rem;
+
+        font-size: 1.2em;
+        text-align: justify;
+        background-color: variable.$indian-red;
+        color: variable.$cornsilk;
       }
     }
   }

@@ -49,7 +49,7 @@
     try{
       $blog_list = array();
 
-      while( $row = $result->fetch_assoc() ){
+      while( $row = $results->fetch_assoc() ){
         $entry = array(
           "blog_id"=>$row["blog_id"],
           "title"=>$row["title"],
@@ -71,5 +71,22 @@
       return false;
     }
 
+  }
+
+  function EncodeBlogContent( $content ){
+    try{
+      $encoded_content = htmlentities( addslashes( $content ) );
+      return $encoded_content;
+    } catch (Exception $error){
+      return FALSE;
+    }
+  }
+  function DecodeBlogContent( $content ){
+    try{
+      $decoded_content = html_entity_decode( stripslashes( $content ) );
+      return $decoded_content;
+    } catch (Exception $error){
+      return FALSE;
+    }
   }
 ?>
